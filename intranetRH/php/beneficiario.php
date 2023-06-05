@@ -29,19 +29,22 @@
                     <thead class="table">
                         <tr>
                             <th scope="col">Nombre</th>
+                            <th scope="col">Apellido paterno</th>
+                            <th scope="col">Apellido materno</th>
                             <th scope="col">Parentesco</th>
-                           
                         </tr>
                     </thead>
                     <tbody>
 
                         <?php
-                                $sel="SELECT nombre,parentesco FROM beneficiario";
+                                $sel="SELECT nombre,ap_paterno,ap_materno,parentesco FROM beneficiario";
                                 $res=mysqli_query($conexion,$sel);
                                 while($mos=mysqli_fetch_row($res)){?>
                                         <tr class=""></tr>
                                         <td><?php echo $mos[0]; ?></td>
                                         <td><?php echo $mos[1]; ?></td>
+                                        <td><?php echo $mos[2]; ?></td>
+                                        <td><?php echo $mos[3]; ?></td>
                                         <td>
                                         <button type="button" class="btn btn-primary btn-lg deletedbt" data-bs-toggle="modal" data-bs-target="#del">
                                         <?php echo "<a href='beneficiario.php?id=".$mos[0]."'>Modificar</a>";  ?>

@@ -1,3 +1,25 @@
 img {
     width: 100%;
 }
+.text-shadow-50{
+    text-shadow: 1px 1px 2px #000000;
+
+}
+
+.bg-blue-50{
+    background-color: #6A7CBA;
+}
+.home-logo{
+    float: left;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    width: 300px;
+}
+
+.post-lg{
+    background-color: #0000008f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

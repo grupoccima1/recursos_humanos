@@ -4,26 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos Humanos</title>
+    <title>MY CCIMA | Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="public/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" type="image/x-icon" href="public/img/icons/logo-icon.ico">
 </head>
 
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+
+        <div class="">
+            <img src="public/img/icons/search.svg"  style="width: 2rem;" alt="">
+            <input style="width: 300px;" class="border border-primary rounded" type="text" placeholder=" En que te puedo Ayudar">
+
+        </div>
+        <div class=" d-flex ">
+            <a class="me-2" href=""> <img style="width: 2rem;" src="public/img/icons/notifications.svg" alt=""></a>
+            <img class="rounded-circle " style="width: 2rem;" src="public/img/avatar/avatar-01.png" alt="">
+            <div class="dropdown">
+                <button class="btn btn-light  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Usuario 1
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <li><a class="dropdown-item" href="#"> Configuración</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+        
     </header>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
                 <a href="#" class="nav_logo">
                     <i class='bx bx-layer nav_logo-icon'></i>
-                    <span class="nav_logo-name">BBBootstrap</span>
+                    <span class="nav_logo-name">MyCCIMA</span>
                 </a>
                 <div class="nav_list">
                     <a href="#" class="nav_link active">
@@ -55,10 +76,10 @@
     </div>
     <!--Container Main start-->
     <div class="height-100 bg-light pb-5">
-        <h4 class="fs-1 text-uppercase">dashboard</h4>
+        <h4 class="fs-2 text-uppercase text-primary">dashboard</h4>
         <div class="row">
             <div class="col-6">
-                <div class="card text-bg-dark">
+                <div class="card shadow text-bg-dark">
                     <img src="public/img/content/home-personal-finance-blog-03.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay post-lg p-4 ">
                         <div class="w-75">
@@ -72,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-info mt-3 rounded-4 shadow-sm">
+                <div class="card bg-info mt-3 rounded-4 shadow-sm" style="border-radius: 25px;">
                     <div class="d-flex justify-content-evenly p-3">
                         <div class="text-center text-white">
                             <span class="fs-1 fw-bolder">12</span>
@@ -93,8 +114,8 @@
                     </div>
                 </div>
 
-                <div class="card mt-3 p-4">
-                    <h4 class="fs-2 text-uppercase m-2 fw-bold text-secondary">tareas Para hoy </h4>
+                <div class="card shadow mt-3 p-4" style="border-radius: 25px;">
+                    <h4 class="fs-3 text-uppercase m-2 fw-bold text-secondary">tareas Para hoy </h4>
                     <hr class="border border-danger ">
                     <ul class="ps-0 text-secondary" style="list-style: none;">
                         <li class="py-2">
@@ -104,8 +125,7 @@
                                     <span class="fw-bold">Lorem ipsum dolor sit, amet consectetur</span>
                                 </div>
                                 <div class="">
-                                    <span class="tag bg-primary rounded-pill py-1 px-3 fs-6 text-white">Recursos
-                                        Humanos</span>
+                                    <span class="tag bg-primary rounded-pill py-1 px-3 fs-6 text-white">RR. HH. </span>
                                 </div>
                             </div>
                         </li>
@@ -117,7 +137,7 @@
                                 </div>
                                 <div class="">
                                     <span
-                                        class="tag bg-success rounded-pill py-1 px-3 fs-6 text-white">Administración</span>
+                                        class="tag bg-success rounded-pill py-1 px-3 fs-6 text-white">Admi</span>
                                 </div>
 
                             </div>
@@ -130,7 +150,7 @@
                                 </div>
                                 <div class="">
                                     <span
-                                        class="tag bg-black rounded-pill py-1 px-3 fs-6 text-white">Administración</span>
+                                        class="tag bg-black rounded-pill py-1 px-3 fs-6 text-white">Admi</span>
                                 </div>
 
                             </div>
@@ -143,7 +163,7 @@
                                 </div>
                                 <div class="">
                                     <span
-                                        class="tag bg-danger rounded-pill py-1 px-3 fs-6 text-white">Administración</span>
+                                        class="tag bg-danger rounded-pill py-1 px-3 fs-6 text-white">Admi</span>
                                 </div>
 
                             </div>
@@ -156,7 +176,7 @@
                                 </div>
                                 <div class="">
                                     <span
-                                        class="tag bg-danger rounded-pill py-1 px-3 fs-6 text-white">Administración</span>
+                                        class="tag bg-danger rounded-pill py-1 px-3 fs-6 text-white">Admi</span>
                                 </div>
 
                             </div>
@@ -165,7 +185,7 @@
                     </ul>
                 </div>
 
-                <div class="card mt-3">
+                <div class="card shadow mt-3" style="border-radius: 25px;">
                     <div class="p-3">
                         <h3 class=" text-secondary text-uppercase text-center pb-2">Indicadores claves</h3>
                         <canvas id="grafica"></canvas>
@@ -173,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="card mt-3 text-bg-dark">
+                <div class="card shadow mt-3 text-bg-dark">
                     <img src="public/img/content/home-personal-finance-blog-03.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay post-lg p-4 ">
                         <div class="w-75">
@@ -192,17 +212,15 @@
 
 
             <div class="col-3">
-                <div class="card ">
-                    <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
-                </div>
-                <div class="card mt-5 shadow" style="border-radius: 25px;">
+                
+                <div class="card shadow" style="border-radius: 25px;">
                     <div class="card-body p-0">
                         <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
                         <div class="p-4">
                             <div class="pb-3">
                                 <span class="tag bg-success rounded-pill py-1 px-3 fs-6 text-white">Dirección</span>
                             </div>
-                            <h4 class="fs-3 text-uppercase text-secondary fw-semibold">Hola Mundo</h4>
+                            <h4 class="fs-5 text-uppercase text-secondary fw-semibold">Hola Mundo</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
                                 consectetur </p>
                             <div class="d-flex justify-content-center mt-3">
@@ -213,10 +231,9 @@
                 </div>
 
                 <div class="card mt-3 p-5 shadow" style="border-radius: 25px;">
-                    <h4 class="fs-3 text-uppercase text-secondary fw-semibold"> Tu opinion es Importante</h4>
+                    <h4 class="fs-4 text-uppercase text-secondary fw-semibold"> Tu opinion es Importante</h4>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt dolores dolore nostrum.
-                        Voluptatum ipsam a, dolorum ab omnis animi voluptate dicta! Autem ad quaerat ipsum libero
-                        ratione! Doloremque, corporis.</p>
+                        Voluptatum ipsam a, dolorum.</p>
                     <div class="">
                         <form action="" method="post">
                             <input type="radio" id="Lunes" name="dia" value="Lunes">
@@ -239,7 +256,7 @@
                             <div class="pb-3">
                                 <span class="tag bg-success rounded-pill py-1 px-3 fs-6 text-white">Dirección</span>
                             </div>
-                            <h4 class="fs-3 text-uppercase text-secondary fw-semibold">Hola Mundo</h4>
+                            <h4 class="fs-5 text-uppercase text-secondary fw-semibold">Hola Mundo</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
                                 consectetur </p>
                             <div class="d-flex justify-content-center mt-3">
@@ -290,53 +307,67 @@
                     </div>
                 </div>
 
-                <div class="card mt-5 p-2">
+                <div class="card shadow mt-5 p-2 " style="border-radius: 25px;">
 
-                    <h4 class="text-center p-3">Documenos Importantes</h4>
-                    <ul>
-                        <li><a href="#">documento 1</a></li>
-                        <li><a href="#">documento 1</a></li>
-                        <li><a href="#">documento 1</a></li>
-                        <li><a href="#">documento 1</a></li>
-                        <li><a href="#">documento 1</a></li>
+                    <h4 class="text-center p-3">Documentos Importantes</h4>
+                    <ul style="list-style: none; line-height: 2 ;">
+                        <li><a href="#"><img src="public/img/icons/pdf.svg" class="doc-icon" alt=""> <span> Documento
+                                    1</span></a></li>
+                        <li><a href="#"><img src="public/img/icons/pdf.svg" class="doc-icon" alt=""> <span> Documento
+                                    2</span></a></li>
+                        <li><a href="#"><img src="public/img/icons/pdf.svg" class="doc-icon" alt=""> <span> Documento
+                                    3</span></a></li>
+                        <li><a href="#"><img src="public/img/icons/pdf.svg" class="doc-icon" alt=""> <span> Documento
+                                    4</span></a></li>
+                        <li><a href="#"><img src="public/img/icons/pdf.svg" class="doc-icon" alt=""> <span> Documento
+                                    5</span></a></li>
 
                     </ul>
-                    <div class=" d-flex justify-content-center">
-                        <a href="" class="btn btn-primary"> Ver Mas</a>
-
+                    <div class="d-flex justify-content-center mt-3 mb-3">
+                        <a href="" class="btn btn-primary rounded-pill px-5"> Ver Mas</a>
                     </div>
                 </div>
-                <div class="card mt-3 p-2">
-                    <h4 class="text-center"> Nuevas Vacantes</h4>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="">
+                <h4 class="text-uppercase fw-bold mt-5">Vacantes</h4>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="public/img/content/woman-.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-8">
-                            <h5 class="">Puesto 01</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h5 class="">Puesto 01</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h5 class="">Puesto 01</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur </p>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Asistente</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="public/img/content/old-man.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Asesor Ventas</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="public/img/content/woman-.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Programadora</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -344,51 +375,57 @@
         <div class="row">
             <div class="col-3">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body p-0">
                         <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
-                        <h4>Hola Mundo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="" class="btn btn-primary"> Ver Mas</a>
+                        <div class="p-2">
+                            <h4>Hola Mundo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="" class="btn btn-primary"> Ver Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
+                        <div class="p-2">
+                            <h4>Hola Mundo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="" class="btn btn-primary"> Ver Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
+                        <div class="p-2">
+                            <h4>Hola Mundo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="" class="btn btn-primary"> Ver Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
+                        <div class="p-2">
+                            <h4>Hola Mundo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="" class="btn btn-primary"> Ver Mas</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
-                        <h4>Hola Mundo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="" class="btn btn-primary"> Ver Mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
-                        <h4>Hola Mundo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="" class="btn btn-primary"> Ver Mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="public/img/content/home-personal-finance-blog-03.jpg" alt="imagen de Prueba">
-                        <h4>Hola Mundo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="" class="btn btn-primary"> Ver Mas</a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
-    <script type="text/javascript">
-        $("#datetime").datetimepicker();
-    </script>
     <!--Container Main end-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

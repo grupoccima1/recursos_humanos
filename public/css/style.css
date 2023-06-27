@@ -23,3 +23,6 @@ img {
     flex-direction: column;
     justify-content: flex-end;
 }
+.doc-icon{
+    width: 1rem;
+}

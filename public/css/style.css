@@ -26,3 +26,9 @@ img {
 .doc-icon{
     width: 1rem;
 }
+.bg-blue-500{
+    background-color: #021D49;
+}
+.text-blue-500{
+    color:#021D49;
+}

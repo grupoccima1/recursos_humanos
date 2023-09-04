@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  nav, main, aside {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    height: 80vh; /* Ajusta la altura según tus necesidades */
+    transition: width 0.5s ease;
+  }
+
+  .container:hover nav,
+  .container:hover main,
+  .container:hover aside {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+  <div class="container">
+    <nav>
+      <h2>Nav</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!-- Agrega más elementos si es necesario -->
+      </ul>
+    </nav>
+    <main>
+      <h2>Main Content</h2>
+      <!-- Contenido del main -->
+    </main>
+    <aside>
+      <h2>Aside</h2>
+      <!-- Contenido del aside -->
+    </aside>
+  </div>
+</body>
+</html>

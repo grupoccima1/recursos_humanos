@@ -8,7 +8,7 @@
     --white-color: #F7F6FB;
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
-    --z-fixed: 100
+    --z-fixed: 1021 !important;
 }
 
 *,
@@ -122,7 +122,7 @@ a {
     font-size: 1.25rem
 }
 
-.show {
+.show-m {
     left: 0
 }
 
@@ -172,7 +172,7 @@ a {
         padding: 1rem 1rem 0 0
     }
 
-    .show {
+    .show-m {
         width: calc(var(--nav-width) + 156px)
     }
 

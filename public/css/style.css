@@ -111,3 +111,10 @@ img {
 #notificaciones li a .sherpa{
     line-height: 1;
 }
+
+.text-progreso{
+    color: #8a949d85;
+}
+#table-employee th, td {
+    white-space: nowrap; /* Evita el salto de línea */
+}

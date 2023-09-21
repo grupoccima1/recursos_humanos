@@ -55,11 +55,13 @@
                     </li>
                 </ul>
             </div>
-            <a class="nav-link dropdown-toggle fw-bolder text-blue-500" href="#" id="navbarDropdown" role="button"
+            <a class="nav-link dropdown-toggle fw-bolder text-blue-500 d-flex align-items-center" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <img class="rounded-circle me-1" src="public/img/avatar/america_vazquez.jpg" alt=""
                     style="width: 35px;">
-                America Vazquez
+                    <span class="d-none d-md-block">
+                        America Vazquez
+                    </span>
             </a>
             <ul class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Perfil</a></li>
@@ -103,368 +105,372 @@
                     class="nav_name">Salir</span> </a>
         </nav>
     </div>
+    
     <main>
         <!--Container Main start-->
-        <div class="container" style="background-color: #F1F3F6;">
-            <h4 class="fs-2 text-uppercase text-blue-500">Empleados</h4>
+        <div class="container-fluid" style="background-color: #F1F3F6;">
+            <div class="d-flex justify-content-between pt-2">
+                <h4 class="fs-2 text-uppercase text-blue-500">Empleados</h4>
+                <span class=" fs-6  text-uppercase pe-3 text-progreso">generemos progreso</span>
+            </div>
             <section>
-                <table id="table-employee" class="table">
-                    <thead class="bg-blue-500 text-white">
-                        <tr>
-                            <th class="text-center" scope="col">Empleados</th>
-                            <th class="text-center" scope="col">Edad</th>
-                            <th class="text-center" scope="col">Antiguedad</th>
-                            <th class="text-center" scope="col">CURP</th>
-                            <th class="text-center" scope="col">RFC</th>
-                            <th class="text-center" scope="col">IMSS</th>
-                            <th class="text-center" scope="col">Opciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/alan_gonzales.jpg" alt="">
+                <div class="table-responsive">
+                    <table id="table-employee" class="table">
+                        <thead class="bg-blue-500 text-white">
+                            <tr>
+                                <th class="text-center" scope="col">Empleados</th>
+                                <th class="text-center" scope="col">Edad</th>
+                                <th class="text-center" scope="col">Antiguedad</th>
+                                <th class="text-center" scope="col">CURP</th>
+                                <th class="text-center" scope="col">RFC</th>
+                                <th class="text-center" scope="col">IMSS</th>
+                                <th class="text-center" scope="col">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/alan_gonzales.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Alan Gonzalez</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Lider de Diseño</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Alan Gonzalez</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Lider de Diseño</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/alejandro_carranza.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/alejandro_carranza.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Alejandro
+                                                Carranza</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Gerente de Legal</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Alejandro
-                                            Carranza</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Gerente de Legal</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/amparo_ramirez.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/amparo_ramirez.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Amparo Ramirez</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Jefa de Contratos</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Amparo Ramirez</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Jefa de Contratos</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/yaressi_rodrigez.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/yaressi_rodrigez.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Yaressi Rodriguez</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Coordinadora de
+                                                Soporte</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Yaressi Rodriguez</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Coordinadora de
-                                            Soporte</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/america_vazquez.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/america_vazquez.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">America Vazquez</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Gerente RR.HH</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">America Vazquez</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Gerente RR.HH</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/isabella_tellez.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/isabella_tellez.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Isabella Tellez</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Auxiliar de
+                                                Diseño</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Isabella Tellez</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Auxiliar de
-                                            Diseño</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/isai_garcia.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/isai_garcia.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Isai Garcia</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Coordinador de
+                                                Innovación</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Isai Garcia</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Coordinador de
-                                            Innovación</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/dulce_mendoza.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/dulce_mendoza.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Dulce Mendoza</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Recepción BQ</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Dulce Mendoza</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Recepción BQ</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/anahi_ramirez.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/anahi_ramirez.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Anahi Ramirez</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Coordinadora de
+                                                Navetec</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Anahi Ramirez</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Coordinadora de
-                                            Navetec</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="sherpa d-flex">
-                                    <div class="">
-                                        <img class="sherpa-book rounded-circle" style="width: 38px;"
-                                            src="public/img/avatar/julio_xaco.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="sherpa d-flex">
+                                        <div class="">
+                                            <img class="sherpa-book rounded-circle" style="width: 38px;"
+                                                src="public/img/avatar/julio_xaco.jpg" alt="">
+                                        </div>
+                                        <div class="ms-2">
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold">Julio Xaco</span>
+                                            <span class="sherpa-position" style="font-size: .8rem;">Auxiliar Control y
+                                                Medición</span>
+                                        </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <span class="d-block sherpa-name text-blue-500 fw-bold">Julio Xaco</span>
-                                        <span class="sherpa-position" style="font-size: .8rem;">Auxiliar Control y
-                                            Medición</span>
+                                </td>
+                                <td>25 Años</td>
+                                <td>4 Años</td>
+                                <td>VELA971118HQTLNL03</td>
+                                <td>VELA971118793</td>
+                                <td>14139766183</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li><a class="dropdown-item" href="#">Editar</a></li>
+                                            <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </td>
-                            <td>25 Años</td>
-                            <td>4 Años</td>
-                            <td>VELA971118HQTLNL03</td>
-                            <td>VELA971118793</td>
-                            <td>14139766183</td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Ver Información</a></li>
-                                        <li><a class="dropdown-item" href="#">Editar</a></li>
-                                        <li><a class="dropdown-item" href="#">Eliminar</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
+                                </td>
+                            </tr>
+    
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
     </main>
-
-
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -476,7 +482,7 @@
                 <div class="modal-body">
                     <div class="containr-fluid">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-md-3">
                                 <img src="public/img/avatar/alan_gonzales.jpg" alt="">
                                 <h5 class="mt-3 text-blue-500">Documentación</h5>
                                 <ul class="ms-2" style="list-style: none; ">
@@ -494,122 +500,125 @@
                                             Administrativa(s)</a></li>
                                 </ul>
                             </div>
-                            <div class="col-9">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="3" class="text-blue-500 fs-5">Datos
-                                                Personales</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="fs-12 fst-italic d-block">Nombre:</span> <span
-                                                    class="fw-bold text-blue-500">Alan</span></td>
-                                            <td><span class="fs-12 fst-italic d-block">Apellido Paterno: </span><span
-                                                    class="fw-bold text-blue-500">Gonzalez </span></td>
-                                            <td><span class="fs-12 fst-italic d-block">Apellido Materno: </span><span
-                                                    class="fw-bold text-blue-500">Montes de Oca</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">Sexo:</span> <span
-                                                    class="fw-bold text-blue-500">Masculino</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Edad: </span> <span
-                                                    class="fw-bold text-blue-500"> 33 Años</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Lugar de Nacimiento</span> <span
-                                                    class="fw-bold text-blue-500">CDMX</span> </td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">Fecha de nacimiento: </span>
-                                                <span class="fw-bold text-blue-500">12-Mayo-1995</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Nacionalidad:</span> <span
-                                                    class="fw-bold text-blue-500">Mexicana</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Numero de telefono
-                                                    personal:</span> <span class="fw-bold text-blue-500">+52
-                                                    (123)-444-7890</span></td>
+                            <div class="col-12 col-md-9">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="text-blue-500 fs-5">Datos
+                                                    Personales</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="fs-12 fst-italic d-block">Nombre:</span> <span
+                                                        class="fw-bold text-blue-500">Alan</span></td>
+                                                <td><span class="fs-12 fst-italic d-block">Apellido Paterno: </span><span
+                                                        class="fw-bold text-blue-500">Gonzalez </span></td>
+                                                <td><span class="fs-12 fst-italic d-block">Apellido Materno: </span><span
+                                                        class="fw-bold text-blue-500">Montes de Oca</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">Sexo:</span> <span
+                                                        class="fw-bold text-blue-500">Masculino</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Edad: </span> <span
+                                                        class="fw-bold text-blue-500"> 33 Años</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Lugar de Nacimiento</span> <span
+                                                        class="fw-bold text-blue-500">CDMX</span> </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">Fecha de nacimiento: </span>
+                                                    <span class="fw-bold text-blue-500">12-Mayo-1995</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Nacionalidad:</span> <span
+                                                        class="fw-bold text-blue-500">Mexicana</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Numero de telefono
+                                                        personal:</span> <span class="fw-bold text-blue-500">+52
+                                                        (123)-444-7890</span></td>
+    
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><span class="fs-12 fst-italic d-block">Domicilio:</span>
+                                                    <span class="fw-bold text-blue-500"> Blvd: Bernardo Quintana 88,
+                                                        Carretaras Querétaro; Querétaro</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">Correo personal:</span> <span
+                                                        class="fw-bold text-blue-500">johndoe@example.com</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Estudios: </span> <span
+                                                        class="fw-bold text-blue-500">Lic. en Diseño Gráfico</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Estado cívil:</span> <span
+                                                        class="fw-bold text-blue-500">Soltero</span> </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">IMSS:</span> <span
+                                                        class="fw-bold text-blue-500">14139766183</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">CURP:</span> <span
+                                                        class="fw-bold text-blue-500">VELA971118HQTLNL03</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">RFC:</span> <span
+                                                        class="fw-bold text-blue-500"> VELA971118793 </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">Hijos:</span> <span
+                                                        class="fw-bold text-blue-500">Ninguno</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Tipo de Sangre:</span> <span
+                                                        class="fw-bold text-blue-500">(O +)</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Alergias</span> <span
+                                                        class="fw-bold text-blue-500">Penicilina</span> </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="text-blue-500 fs-5">Datos
+                                                    Laborales</td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">Unidad de negocio: </span> <span
+                                                        class="fw-bold text-blue-500">Navetec</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Departamento: </span> <span
+                                                        class="fw-bold text-blue-500">Comercializacion</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Puesto: </span> <span
+                                                        class="fw-bold text-blue-500">Lider de Diseño</span> </td>
+                                            </tr>
+    
+                                            <tr>
+    
+                                                <td> <span class="fs-12 fst-italic d-block">Fecha de ingreso: </span> <span
+                                                        class="fw-bold text-blue-500">25-Diciembre-2019</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Tipo de Contrato:</span> <span
+                                                        class="fw-bold text-blue-500">indeterminado</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Vacaciones:</span> <span
+                                                        class="fw-bold text-blue-500">12 dias</span> </td>
+                                            </tr>
+                                            
+                                            
+                            
+    
+                                            <tr>
+                                                <td colspan="3" class="text-blue-500 fs-5">
+                                                    Contacto de emergencia</td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">Nombre: </span> <span
+                                                        class="fw-bold text-blue-500">Jackeline Gonzalez Montes de
+                                                        Oca</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Teléfono: </span> <span
+                                                        class="fw-bold text-blue-500">+52 (123)-444-7890</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Parentesco: </span> <span
+                                                        class="fw-bold text-blue-500">Hermana</span> </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="text-blue-500 fs-5">
+                                                    Benificiarios</td>
+                                            </tr>
+                                            <tr>
+                                                <td> <span class="fs-12 fst-italic d-block">Nombre: </span> <span
+                                                        class="fw-bold text-blue-500">Jackeline Gonzalez Montes de
+                                                        Oca</span></td>
+                                                <td> <span class="fs-12 fst-italic d-block">Teléfono: </span> <span
+                                                        class="fw-bold text-blue-500">+52 (123)-444-7890</span> </td>
+                                                <td> <span class="fs-12 fst-italic d-block">Parentesco: </span> <span
+                                                        class="fw-bold text-blue-500">Hermana</span> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><span class="fs-12 fst-italic d-block">Domicilio:</span>
-                                                <span class="fw-bold text-blue-500"> Blvd: Bernardo Quintana 88,
-                                                    Carretaras Querétaro; Querétaro</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">Correo personal:</span> <span
-                                                    class="fw-bold text-blue-500">johndoe@example.com</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Estudios: </span> <span
-                                                    class="fw-bold text-blue-500">Lic. en Diseño Gráfico</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Estado cívil:</span> <span
-                                                    class="fw-bold text-blue-500">Soltero</span> </td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">IMSS:</span> <span
-                                                    class="fw-bold text-blue-500">14139766183</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">CURP:</span> <span
-                                                    class="fw-bold text-blue-500">VELA971118HQTLNL03</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">RFC:</span> <span
-                                                    class="fw-bold text-blue-500"> VELA971118793 </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">Hijos:</span> <span
-                                                    class="fw-bold text-blue-500">Ninguno</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Tipo de Sangre:</span> <span
-                                                    class="fw-bold text-blue-500">(O +)</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Alergias</span> <span
-                                                    class="fw-bold text-blue-500">Penicilina</span> </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3" class="text-blue-500 fs-5">Datos
-                                                Laborales</td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">Unidad de negocio: </span> <span
-                                                    class="fw-bold text-blue-500">Navetec</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Departamento: </span> <span
-                                                    class="fw-bold text-blue-500">Comercializacion</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Puesto: </span> <span
-                                                    class="fw-bold text-blue-500">Lider de Diseño</span> </td>
-                                        </tr>
-
-                                        <tr>
-
-                                            <td> <span class="fs-12 fst-italic d-block">Fecha de ingreso: </span> <span
-                                                    class="fw-bold text-blue-500">25-Diciembre-2019</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Tipo de Contrato:</span> <span
-                                                    class="fw-bold text-blue-500">indeterminado</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Vacaciones:</span> <span
-                                                    class="fw-bold text-blue-500">12 dias</span> </td>
-                                        </tr>
-                                        
-                                        
-                        
-
-                                        <tr>
-                                            <td colspan="3" class="text-blue-500 fs-5">
-                                                Contacto de emergencia</td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">Nombre: </span> <span
-                                                    class="fw-bold text-blue-500">Jackeline Gonzalez Montes de
-                                                    Oca</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Teléfono: </span> <span
-                                                    class="fw-bold text-blue-500">+52 (123)-444-7890</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Parentesco: </span> <span
-                                                    class="fw-bold text-blue-500">Hermana</span> </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3" class="text-blue-500 fs-5">
-                                                Benificiarios</td>
-                                        </tr>
-                                        <tr>
-                                            <td> <span class="fs-12 fst-italic d-block">Nombre: </span> <span
-                                                    class="fw-bold text-blue-500">Jackeline Gonzalez Montes de
-                                                    Oca</span></td>
-                                            <td> <span class="fs-12 fst-italic d-block">Teléfono: </span> <span
-                                                    class="fw-bold text-blue-500">+52 (123)-444-7890</span> </td>
-                                            <td> <span class="fs-12 fst-italic d-block">Parentesco: </span> <span
-                                                    class="fw-bold text-blue-500">Hermana</span> </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -618,8 +627,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

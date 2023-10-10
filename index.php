@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYCCIMA  Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="public/img/icons/logo-icon.ico">
+</head>
+<body class="m-0 p-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-3 bg-slave px-5 d-flex justify-content-center flex-column">
+                <div class="avatar pb-5">
+                  <div class="w-50 bg-dark-subtle m-auto border border-3 rounded-circle border-primary ">
+                    <img class="" src="public/img/avatar/avatar-01.png" alt="Usuario exitoso">
+                  </div>
+                </div>                
+                  <form action="validacion.php" method="post">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-blue-500">Correo Corporativo</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label text-blue-500">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" name ="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label text-blue-500" for="exampleCheck1">Recordar mi cuenta</label> -->
+                      </div>
+                      <div class="d-grid gap-2 mb-5">
+
+                        <input id="login-button" class="btn rounded bg-blue-500 text-white" type="submit" value="Iniciar Sesión">
+                      </div>
+                    </form>
+                <!-- <a class="text-center pt-3 text-blue-500 pt-5 text-center" href="reset">¿Olvidaste tu Contraseña?  </a> -->
+            </div>
+            <div class="col-12 col-md-9 bg-blue-500 d-flex flex-column justify-content-center" style="height: 100vh;">
+              <div class="row justify-content-center">
+                <div class="col-6 text-center"> 
+                  <img style="width: 10rem; padding-bottom: 5rem;" src="public/img/logos/gccima_white.svg" alt="">
+                  <blockquote class="blockquote text-white fs-5 text-start"> Pregúntate a ti mismo si lo que estas haciendo hoy te acerca al lugar en el que quieres estar Mañana, </blockquote>
+                  <h5 class="text-white text-end fw-bold pt-4" > <img src="public/img/icons/line-login.svg" style="width: 32px;" alt=""> Walt Disney</h5> 
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

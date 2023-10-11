@@ -1,5 +1,5 @@
 <?php
-    $conexion=mysqli_connect('localhost','root','','recursos');
+    $conexion=mysqli_connect('localhost','root','','recursoshumanos');
 ?>
 
 

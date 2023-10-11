@@ -17,7 +17,7 @@ if($session == null || $session = ''){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY CCIMA | Dashboard master</title>
+    <title>MY CCIMA | Dashboard medio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./../public/css/bootstrap/bootstrap.min.css">
@@ -82,26 +82,26 @@ if($session == null || $session = ''){
     <div class="l-navbar" id="nav-bar">
         <nav class="nav_main">
             <div>
-                <a href="dashboard_master.php" class="nav_logo">
+                <a href="./../dashboard_master.php" class="nav_logo">
                     <i class='bx bx-layer nav_logo-icon'></i>
                     <span class="nav_logo-name">MyCCIMA</span>
                 </a>
                 <div class="nav_list">
-                    <a href="dashboard.html" class="nav_link">
+                    <a href="./../dashboard.html" class="nav_link">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
-                    <a href="empleados.html" class="nav_link">
+                    <a href="./../empleados.html" class="nav_link">
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Empleados</span>
                     </a>
-                    <a href="index.html" class="nav_link active">
+                    <a href="./../index.html" class="nav_link active">
                         <i class='bx bx-message-square-detail nav_icon '></i>
                         <span class="nav_name">Noticias</span> </a>
-                    <a href="ccimabook.html" class="nav_link">
+                    <a href="./../ccimabook.html" class="nav_link">
                         <i class='bx bx-bookmark nav_icon'></i>
                         <span class="nav_name">CCIMABook</span> </a>
-                    <a href="profile.html" class="nav_link">
+                    <a href="./../profile.html" class="nav_link">
                         <i class='bx bx-folder nav_icon'></i>
                         <span class="nav_name">Perfil</span>
                     </a>
@@ -120,7 +120,7 @@ if($session == null || $session = ''){
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="card shadow text-bg-dark border-0">
-                    <img src="./Dashboard_files/home-personal-finance-blog-03.jpg" class="card-img" alt="...">
+                    <img src="./../Dashboard_files/home-personal-finance-blog-03.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay post-lg p-4 ">
                         <div class="w-75">
                             <div class="pb-3">
@@ -134,7 +134,7 @@ if($session == null || $session = ''){
                     </div>
                 </div>
                 <div class="card shadow text-bg-dark mt-4 border-0">
-                    <img src="./Dashboard_files/home-personal-finance-blog-03.jpg" class="card-img" alt="...">
+                    <img src="./../Dashboard_files/home-personal-finance-blog-03.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay post-lg p-4 ">
                         <div class="w-75">
                             <div class="pb-3">
@@ -148,7 +148,7 @@ if($session == null || $session = ''){
                     </div>
                 </div>
                 <div class="card shadow text-bg-dark mt-4 border-0">
-                    <img src="public/img/content/news/grupoccima-com.jpg" class="card-img" alt="...">
+                    <img src="./../public/img/content/news/grupoccima-com.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay post-lg p-4 ">
                         <div class="w-75">
                             <div class="pb-3">
@@ -167,7 +167,7 @@ if($session == null || $session = ''){
                     <a href="https://www.eluniversalqueretaro.mx/cartera/queretaro-es-beneficiado-con-llegada-de-tesla/" target="_blank">
                         <div class="row g-0">
                             <div class="col-12 col-md-3">
-                                <img src="public/img/content/news/post-1.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./../public/img/content/news/post-1.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-12 col-md-9">
                                 <div class="card-body">
@@ -184,7 +184,7 @@ if($session == null || $session = ''){
                     <a href="https://www.eluniversalqueretaro.mx/cartera/bares-y-discotecas-con-inversiones-de-15-mdp-en-queretaro/" target="_blank">
                         <div class="row g-0">
                             <div class="col-12 col-md-3">
-                                <img src="public/img/content/news/post-2.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./../public/img/content/news/post-2.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-12 col-md-9">
                                 <div class="card-body">
@@ -201,7 +201,7 @@ if($session == null || $session = ''){
 
                         <div class="row g-0">
                             <div class="col-12 col-md-3">
-                                <img src="public/img/content/news/post-3.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./../public/img/content/news/post-3.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-12 col-md-9">
                                 <div class="card-body">
@@ -219,7 +219,7 @@ if($session == null || $session = ''){
                     <a href="https://www.eluniversalqueretaro.mx/cartera/queretaro-es-beneficiado-con-llegada-de-tesla/" target="_blank">
                         <div class="row g-0">
                             <div class="col-12 col-md-3">
-                                <img src="public/img/content/news/post-1.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./../public/img/content/news/post-1.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-12 col-md-9">
                                 <div class="card-body">
@@ -236,7 +236,7 @@ if($session == null || $session = ''){
                     <a href="https://www.eluniversalqueretaro.mx/cartera/bares-y-discotecas-con-inversiones-de-15-mdp-en-queretaro/" target="_blank">
                         <div class="row g-0">
                             <div class="col-12 col-md-3">
-                                <img src="public/img/content/news/post-2.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./../public/img/content/news/post-2.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-12 col-md-9">
                                 <div class="card-body">
@@ -253,7 +253,7 @@ if($session == null || $session = ''){
 
                         <div class="row g-0">
                             <div class="col-12 col-md-3">
-                                <img src="public/img/content/news/post-3.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./../public/img/content/news/post-3.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-12 col-md-9">
                                 <div class="card-body">

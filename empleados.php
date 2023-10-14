@@ -84,7 +84,7 @@ include "./class/conexion.php";
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Salir</a></li>
+                <li><a class="dropdown-item" href="./cerrar_cesion.php">Salir</a></li>
             </ul>
 
         </div>
@@ -116,7 +116,7 @@ include "./class/conexion.php";
                         <span class="nav_name">Perfil</span>
                     </a>
                 </div>
-            </div> <a href="login.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+            </div> <a href="./cerrar_cesion.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
                     class="nav_name">Salir</span> </a>
         </nav>
     </div>
@@ -145,7 +145,7 @@ include "./class/conexion.php";
 
                         <!-- codigo para jalar info de la tabla -->
                         <?php
-                        $sel="SELECT nombre,ap_paterno,ap_materno,edad,puesto,antiguedad,curp,rfc,infonavit FROM empleados AS e INNER JOIN departamento AS d ON e.id_empleado = d.id_empleado INNER JOIN contrato AS c ON e.id_empleado = c.id_empleado INNER JOIN datos_fiscales AS df ON e.id_empleado = df.id_empleado";
+                        $sel="SELECT e.id_empleado,nombre,ap_paterno,ap_materno,edad,puesto,antiguedad,curp,rfc,infonavit FROM empleados AS e INNER JOIN departamento AS d ON e.id_empleado = d.id_empleado INNER JOIN contrato AS c ON e.id_empleado = c.id_empleado INNER JOIN datos_fiscales AS df ON e.id_empleado = df.id_empleado GROUP BY e.id_empleado";
                         $res=mysqli_query($conexion,$sel);
                         while($mos=mysqli_fetch_row($res)){ ?>
 
@@ -158,16 +158,16 @@ include "./class/conexion.php";
                                                 src="public/img/avatar/alan_gonzales.jpg" alt="">
                                         </div>
                                         <div class="ms-2">
-                                            <span class="d-block sherpa-name text-blue-500 fw-bold"><?php echo $mos[0]." ".$mos[1]." ".$mos[2];  ?></span>
-                                            <span class="sherpa-position" style="font-size: .8rem;"><?php echo $mos[4]?> </span>
+                                            <span class="d-block sherpa-name text-blue-500 fw-bold"><?php echo $mos[1]." ".$mos[2]." ".$mos[3];  ?></span>
+                                            <span class="sherpa-position" style="font-size: .8rem;"><?php echo $mos[5]?> </span>
                                         </div>
                                     </div>
                                 </td>
-                                <td><?php echo $mos[3] ?> Años</td>
-                                <td><?php echo $mos[5] ?> Años</td>
-                                <td><?php echo $mos[6] ?></td>
+                                <td><?php echo $mos[4] ?> Años</td>
+                                <td><?php echo $mos[6] ?> Años</td>
                                 <td><?php echo $mos[7] ?></td>
                                 <td><?php echo $mos[8] ?></td>
+                                <td><?php echo $mos[9] ?></td>
                                 <td>
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -175,14 +175,25 @@ include "./class/conexion.php";
                                             <img src="public/img/icons/options.svg" alt="" style="width: 20px;">
                                         </button>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">Ver Información</a></li>
+                                            <li>    
+                                                <input type="text" name="id" id="id" hidden value="<?php echo $mos[0] ?>">
+                                                
+                                                <?php echo"
+                                                <button type='button' class='dropdown-item' data-bs-toggle='modal' data-bs-target='#exampleModal'.$mos[0].''>
+                                                Ver informacion  
+                                                </button>"
+                                                ?>
+                                            </li>
                                             <li><a class="dropdown-item" href="#">Editar</a></li>
                                             <li><a class="dropdown-item" href="#">Eliminar</a></li>
                                         </ul>
                                     </div>
                                 </td>
                             </tr>
+
+
+
+
                             <?php
                         }
                     ?>
@@ -194,167 +205,14 @@ include "./class/conexion.php";
         </div>
     </main>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Información del Empleado</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="containr-fluid">
-                        <div class="row">
-                            <div class="col-12 col-md-3">
-                                <img src="public/img/avatar/alan_gonzales.jpg" alt="">
-                                <h5 class="mt-3 text-blue-500">Documentación</h5>
-                                <ul class="ms-2" style="list-style: none; ">
-                                    <li class="fs-12"> <a class="text-decoration-none text-blue-500" href="">Acta de
-                                            Nacimiento</a> </li>
-                                    <li class="fs-12"> <a class="text-decoration-none text-blue-500" href="">CURP</a>
-                                    </li>
-                                    <li class="fs-12"> <a class="text-decoration-none text-blue-500" href="">RFC</a>
-                                    </li>
-                                    <li class="fs-12"> <a class="text-decoration-none text-blue-500" href="">Titulo</a>
-                                    </li>
-                                    <li class="fs-12"> <a class="text-decoration-none text-blue-500" href="">FIEL</a>
-                                    </li>
-                                    <li class="fs-12"> <a class="text-decoration-none text-blue-500" href="">Acta
-                                            Administrativa(s)</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="3" class="text-blue-500 fs-5">Datos
-                                                    Personales</td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="fs-12 fst-italic d-block">Nombre:</span> <span
-                                                        class="fw-bold text-blue-500">Alan</span></td>
-                                                <td><span class="fs-12 fst-italic d-block">Apellido Paterno: </span><span
-                                                        class="fw-bold text-blue-500">Gonzalez </span></td>
-                                                <td><span class="fs-12 fst-italic d-block">Apellido Materno: </span><span
-                                                        class="fw-bold text-blue-500">Montes de Oca</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">Sexo:</span> <span
-                                                        class="fw-bold text-blue-500">Masculino</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Edad: </span> <span
-                                                        class="fw-bold text-blue-500"> 33 Años</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Lugar de Nacimiento</span> <span
-                                                        class="fw-bold text-blue-500">CDMX</span> </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">Fecha de nacimiento: </span>
-                                                    <span class="fw-bold text-blue-500">12-Mayo-1995</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Nacionalidad:</span> <span
-                                                        class="fw-bold text-blue-500">Mexicana</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Numero de telefono
-                                                        personal:</span> <span class="fw-bold text-blue-500">+52
-                                                        (123)-444-7890</span></td>
-    
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3"><span class="fs-12 fst-italic d-block">Domicilio:</span>
-                                                    <span class="fw-bold text-blue-500"> Blvd: Bernardo Quintana 88,
-                                                        Carretaras Querétaro; Querétaro</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">Correo personal:</span> <span
-                                                        class="fw-bold text-blue-500">johndoe@example.com</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Estudios: </span> <span
-                                                        class="fw-bold text-blue-500">Lic. en Diseño Gráfico</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Estado cívil:</span> <span
-                                                        class="fw-bold text-blue-500">Soltero</span> </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">IMSS:</span> <span
-                                                        class="fw-bold text-blue-500">14139766183</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">CURP:</span> <span
-                                                        class="fw-bold text-blue-500">VELA971118HQTLNL03</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">RFC:</span> <span
-                                                        class="fw-bold text-blue-500"> VELA971118793 </span></td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">Hijos:</span> <span
-                                                        class="fw-bold text-blue-500">Ninguno</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Tipo de Sangre:</span> <span
-                                                        class="fw-bold text-blue-500">(O +)</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Alergias</span> <span
-                                                        class="fw-bold text-blue-500">Penicilina</span> </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3" class="text-blue-500 fs-5">Datos
-                                                    Laborales</td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">Unidad de negocio: </span> <span
-                                                        class="fw-bold text-blue-500">Navetec</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Departamento: </span> <span
-                                                        class="fw-bold text-blue-500">Comercializacion</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Puesto: </span> <span
-                                                        class="fw-bold text-blue-500">Lider de Diseño</span> </td>
-                                            </tr>
-    
-                                            <tr>
-    
-                                                <td> <span class="fs-12 fst-italic d-block">Fecha de ingreso: </span> <span
-                                                        class="fw-bold text-blue-500">25-Diciembre-2019</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Tipo de Contrato:</span> <span
-                                                        class="fw-bold text-blue-500">indeterminado</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Vacaciones:</span> <span
-                                                        class="fw-bold text-blue-500">12 dias</span> </td>
-                                            </tr>
-                                            
-                                            
-                            
-    
-                                            <tr>
-                                                <td colspan="3" class="text-blue-500 fs-5">
-                                                    Contacto de emergencia</td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">Nombre: </span> <span
-                                                        class="fw-bold text-blue-500">Jackeline Gonzalez Montes de
-                                                        Oca</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Teléfono: </span> <span
-                                                        class="fw-bold text-blue-500">+52 (123)-444-7890</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Parentesco: </span> <span
-                                                        class="fw-bold text-blue-500">Hermana</span> </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3" class="text-blue-500 fs-5">
-                                                    Benificiarios</td>
-                                            </tr>
-                                            <tr>
-                                                <td> <span class="fs-12 fst-italic d-block">Nombre: </span> <span
-                                                        class="fw-bold text-blue-500">Jackeline Gonzalez Montes de
-                                                        Oca</span></td>
-                                                <td> <span class="fs-12 fst-italic d-block">Teléfono: </span> <span
-                                                        class="fw-bold text-blue-500">+52 (123)-444-7890</span> </td>
-                                                <td> <span class="fs-12 fst-italic d-block">Parentesco: </span> <span
-                                                        class="fw-bold text-blue-500">Hermana</span> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="public/js/app.js"></script>
-</body>
 
+</body>
+<?php include 'modal.php' ?>
 </html>

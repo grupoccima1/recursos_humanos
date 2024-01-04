@@ -1,5 +1,3 @@
-
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -9,11 +7,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                <input type="text" name="id" id="id">
                     <div class="containr-fluid">
                         <div class="row">
                             <div class="col-12 col-md-3">
                                 <img src="public/img/avatar/alan_gonzales.jpg" alt="">
                                 <h5 class="mt-3 text-blue-500">Documentación</h5>
+
+
                                
                                 <ul class="ms-2" style="list-style: none; ">
                                     <li class="fs-12"> <a class="text-decoration-none text-blue-500" href="">Acta de
@@ -39,12 +40,18 @@
                                                     Personales</td>
                                             </tr>
                                             <tr>
-                                                <td><span class="fs-12 fst-italic d-block">Nombre:</span> <span
-                                                        class="fw-bold text-blue-500">Alan</span></td>
-                                                <td><span class="fs-12 fst-italic d-block">Apellido Paterno: </span><span
-                                                        class="fw-bold text-blue-500">Gonzalez </span></td>
-                                                <td><span class="fs-12 fst-italic d-block">Apellido Materno: </span><span
-                                                        class="fw-bold text-blue-500">Montes de Oca</span></td>
+                                                 <td><span class="fs-12 fst-italic d-block">Nombre:</span> <!--<span
+                                                        class="fw-bold text-blue-500" id="nombre">Alan</span>-->
+                                                <input class="fw-bold text-blue-500" type="text" name="nombre" id="nombre">
+                                                </td> 
+                                                <td><span class="fs-12 fst-italic d-block">Apellido Paterno: </span><!--<span
+                                                        class="fw-bold text-blue-500" id="appaterno"> </span>-->
+                                                        <input class="fw-bold text-blue-500" type="text" name="appaterno" id="appaterno">
+                                                </td>
+                                                <td><span class="fs-12 fst-italic d-block">Apellido Materno: </span> <!--<span
+                                                        class="fw-bold text-blue-500">Montes de Oca</span>-->
+                                                        <input class="fw-bold text-blue-500" type="text" name="apmaterno" id="apmaterno">
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td> <span class="fs-12 fst-italic d-block">Sexo:</span> <span

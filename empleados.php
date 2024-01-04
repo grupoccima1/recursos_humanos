@@ -145,7 +145,7 @@ include "./class/conexion.php";
 
                         <!-- codigo para jalar info de la tabla -->
                         <?php
-                        $sel="SELECT e.id_empleado,nombre,ap_paterno,ap_materno,edad,puesto,antiguedad,curp,rfc,infonavit FROM empleados AS e INNER JOIN departamento AS d ON e.id_empleado = d.id_empleado INNER JOIN contrato AS c ON e.id_empleado = c.id_empleado INNER JOIN datos_fiscales AS df ON e.id_empleado = df.id_empleado GROUP BY e.id_empleado";
+                        $sel="SELECT e.id_empleado,nombre,ap_paterno,ap_materno,edad,puesto,antiguedad,curp,rfc,infonavit FROM empleados AS e INNER JOIN departamento AS d ON e.id_empleado = d.id_empleado INNER JOIN contrato AS c ON e.id_empleado = c.id_empleado INNER JOIN datos_fiscales AS df ON e.id_empleado = df.id_empleado";
                         $res=mysqli_query($conexion,$sel);
                         while($mos=mysqli_fetch_row($res)){ ?>
 
@@ -176,13 +176,7 @@ include "./class/conexion.php";
                                         </button>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                             <li>    
-                                                <input type="text" name="id" id="id" hidden value="<?php echo $mos[0] ?>">
-                                                
-                                                <?php echo"
-                                                <button type='button' class='dropdown-item' data-bs-toggle='modal' data-bs-target='#exampleModal'.$mos[0].''>
-                                                Ver informacion  
-                                                </button>"
-                                                ?>
+                                                <a href="#" class='dropdown-item' data-bs-toggle='modal' data-bs-target='#exampleModal' data-bs-id="<?php echo $mos[0] ?>">Ver informacion</a>
                                             </li>
                                             <li><a class="dropdown-item" href="#">Editar</a></li>
                                             <li><a class="dropdown-item" href="#">Eliminar</a></li>
@@ -205,7 +199,48 @@ include "./class/conexion.php";
         </div>
     </main>
 
+    </body>
+    <?php include 'modal.php' ?>
+    </html>
    
+    <script>
+    let modal = document.getElementById('exampleModal') 
+    modal.addEventListener('shown.bs.modal', event=> {
+        let button = event.relatedTarget
+        let id = button.getAttribute('data-bs-id')
+
+        let inputId = modal.querySelector('.modal-body #id')
+        let inputNombre = modal.querySelector('.modal-body #nombre')
+        let inputApPaterno = modal.querySelector('.modal-body #appaterno')
+        let inputApMaterno = modal.querySelector('.modal-body #apmaterno')
+        // let inputId = modal.querySelector('.modal-body #id')
+        // let inputId = modal.querySelector('.modal-body #id')
+        // let inputId = modal.querySelector('.modal-body #id')
+        // let inputId = modal.querySelector('.modal-body #id')
+        // let inputId = modal.querySelector('.modal-body #id')
+        // let inputId = modal.querySelector('.modal-body #id')
+        // let inputId = modal.querySelector('.modal-body #id')
+        // let inputId = modal.querySelector('.modal-body #id')
+
+        let url = "consulta.php"
+        let formData = new FormData()
+        formData.append('id', id)
+
+        fetch(url, {
+            method: "POST",
+            body: formData
+        }).then(response => response.json())
+        .then(data => {
+            inputId.value = data.id
+            inputNombre.value = data.nombre
+            inputApPaterno.value = data.apppaterno
+            inputApMaterno.value = data.apmaterno
+         }).catch(err => console.log(err))
+
+    })
+
+    </script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -213,6 +248,3 @@ include "./class/conexion.php";
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="public/js/app.js"></script>
 
-</body>
-<?php include 'modal.php' ?>
-</html>

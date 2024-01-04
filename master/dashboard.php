@@ -18,18 +18,18 @@ if($session == null || $session = ''){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY CCIMA | Dashboard</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="./../public/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="public/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/main.css">
-    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="public/img/icons/logo-icon.ico">
+    <link rel="stylesheet" href="./../public/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./../public/css/main.css">
+    <link href="./../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./../public/img/icons/logo-icon.ico">
 </head>
 
 <body id="body-pd" style="background-color: #F1F3F6;">
     <div class="preloader">
-        <img src="public/img/content/preloader/preloader.gif" alt="">
+        <img src="./../public/img/content/preloader/preloader.gif" alt="">
       </div>
     <div class="contenido-main">
         <header class="header" id="header">
@@ -37,7 +37,7 @@ if($session == null || $session = ''){
             <div class="d-flex">
                 <div class="me-3">
                     <a class="nav-link dropdown-toggle fw-bolder text-blue-500" href="#" id="notifiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="rounded-circle me-1" src="public/img/icons/notifications.svg" alt="" style="width: 30px;">
+                        <img class="rounded-circle me-1" src="./../public/img/icons/notifications.svg" alt="" style="width: 30px;">
                     </a>
                       <ul id="notificaciones" class="dropdown-menu mt-2" aria-labelledby="notifiDropdown">
                         <li class="mt-3">
@@ -45,7 +45,7 @@ if($session == null || $session = ''){
                                 <div class="sherpa d-flex">
                                     <div class="">
                                         <img class="sherpa-book rounded-circle" style="width: 30px;"
-                                            src="public/img/avatar/alan_gonzales.jpg" alt="">
+                                            src="./../public/img/avatar/alan_gonzales.jpg" alt="">
                                     </div>
                                     <div class="ms-2">
                                         <span class="d-block sherpa-name text-blue-500 fw-bold">Alan Gonzalez</span>
@@ -59,7 +59,7 @@ if($session == null || $session = ''){
                                 <div class="sherpa d-flex">
                                     <div class="">
                                         <img class="sherpa-book rounded-circle" style="width: 30px;"
-                                            src="public/img/avatar/dulce_mendoza.jpg" alt="">
+                                            src="./../public/img/avatar/dulce_mendoza.jpg" alt="">
                                     </div>
                                     <div class="ms-2">
                                         <span class="d-block sherpa-name text-blue-500 fw-bold">Dulce Mendoza </span>
@@ -71,7 +71,7 @@ if($session == null || $session = ''){
                       </ul>    
                 </div>
                 <a class="nav-link dropdown-toggle fw-bolder text-blue-500" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img class="rounded-circle me-1" src="public/img/avatar/america_vazquez.jpg" alt="" style="width: 35px;">
+                    <img class="rounded-circle me-1" src="./../public/img/avatar/america_vazquez.jpg" alt="" style="width: 35px;">
                     <?php echo $_SESSION['usuario'] ?>
                   </a>
                   <ul class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
@@ -86,31 +86,31 @@ if($session == null || $session = ''){
         <div class="l-navbar" id="nav-bar">
             <nav class="nav_main">
                 <div>
-                    <a href="dashboard.html" class="nav_logo">
+                    <a href="./dashboard.php" class="nav_logo">
                         <i class='bx bx-layer nav_logo-icon'></i>
                         <span class="nav_logo-name">MyCCIMA</span>
                     </a>
                     <div class="nav_list">
-                        <a href="dashboard.html" class="nav_link active">
+                        <a href="./dashboard.php" class="nav_link active">
                             <i class='bx bx-grid-alt nav_icon'></i>
                             <span class="nav_name">Dashboard</span>
                         </a>
-                        <a href="empleados.html" class="nav_link">
+                        <a href="./../empleados.php" class="nav_link">
                             <i class='bx bx-user nav_icon'></i>
                             <span class="nav_name">Empleados</span>
                         </a>
-                        <a href="index.html" class="nav_link">
+                        <a href="./../index.html" class="nav_link">
                             <i class='bx bx-message-square-detail nav_icon'></i>
                             <span class="nav_name">Noticias</span> </a>
-                        <a href="ccimabook.html" class="nav_link">
+                        <a href="./../ccimabook.html" class="nav_link">
                             <i class='bx bx-bookmark nav_icon'></i>
                             <span class="nav_name">CCIMABook</span> </a>
-                        <a href="profile.html" class="nav_link">
+                        <a href="./../profile.html" class="nav_link">
                             <i class='bx bx-folder nav_icon'></i>
                             <span class="nav_name">Perfil</span>
                         </a>
                     </div>
-                </div> <a href="cerrar_cesion.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                </div> <a href="./../cerrar_cesion.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
                         class="nav_name">Salir</span> </a>
             </nav>
         </div>
@@ -126,7 +126,7 @@ if($session == null || $session = ''){
                         <div class="card rounded border-0">
                             <div class="row">
                                 <div class="col-3 bg-blue-500 text-center d-flex justify-content-center rounded-start">
-                                    <img style="width: 64px;" src="public/img/icons/kpis/diamond.svg" alt="">
+                                    <img style="width: 64px;" src="./../public/img/icons/kpis/diamond.svg" alt="">
                                 </div>
                                 <div class="col-9 text-end">
                                     <h4 class="pt-2 text-start fw-bold fs-6">Tareas Terminadas</h4>
@@ -139,7 +139,7 @@ if($session == null || $session = ''){
                         <div class="card rounded border-0">
                             <div class="row">
                                 <div class="col-3 bg-red-500 text-center d-flex justify-content-center rounded-start">
-                                    <img style="width: 64px;" src="public/img/icons/trophy.svg" alt="">
+                                    <img style="width: 64px;" src="./../public/img/icons/trophy.svg" alt="">
                                 </div>
                                 <div class="col-9 text-end">
                                     <h4 class="pt-2 text-start fw-bold fs-6">Proyectos Terminados</h4>
@@ -152,7 +152,7 @@ if($session == null || $session = ''){
                         <div class="card rounded border-0">
                             <div class="row">
                                 <div class="col-3 bg-blue-400 text-center d-flex justify-content-center rounded-start">
-                                    <img style="width: 64px;" src="public/img/icons/kpis/medalla.svg" alt="">
+                                    <img style="width: 64px;" src="./../public/img/icons/kpis/medalla.svg" alt="">
                                 </div>
                                 <div class="col-9 text-end">
                                     <h4 class="pt-2 text-start fw-bold fs-6">Puntualidad</h4>
@@ -165,7 +165,7 @@ if($session == null || $session = ''){
                         <div class="card rounded border-0">
                             <div class="row">
                                 <div class="col-3 bg-blue-100 text-center d-flex justify-content-center rounded-start">
-                                    <img style="width: 64px;" src="public/img/icons/kpis/stars.svg" alt="">
+                                    <img style="width: 64px;" src="./../public/img/icons/kpis/stars.svg" alt="">
                                 </div>
                                 <div class="col-9 text-end">
                                     <h4 class="pt-2 text-start fw-bold fs-6">Proyectos Activos</h4>
@@ -188,7 +188,7 @@ if($session == null || $session = ''){
                                         <li class="py-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="">
-                                                    <img style="width: 30px;" src="./Dashboard_files/check.svg" alt="">
+                                                    <img style="width: 30px;" src="./../Dashboard_files/check.svg" alt="">
                                                     <span class="fw-bold">Instalación de licencias de Microsoft 365 para el equipo de RR.HH</span>
                                                 </div>
                                                 <div class="d-none d-md-block">
@@ -199,7 +199,7 @@ if($session == null || $session = ''){
                                         <li class="py-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="">
-                                                    <img style="width: 30px;" src="./Dashboard_files/check.svg" alt="">
+                                                    <img style="width: 30px;" src="./../Dashboard_files/check.svg" alt="">
                                                     <span class="fw-bold">Solicitar cotización con Enrique de antivirus AVIRA Admi </span>
                                                 </div>
                                                 <div class="d-none d-md-block">
@@ -212,7 +212,7 @@ if($session == null || $session = ''){
                                         <li class="py-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="">
-                                                    <img style="width: 30px;" src="./Dashboard_files/check.svg" alt="">
+                                                    <img style="width: 30px;" src="./../Dashboard_files/check.svg" alt="">
                                                     <span class="fw-bold">Crear nuevo usuario en la plataforma para otra prueba Rentas</span>
                                                 </div>
                                                 <div class="d-none d-md-block">
@@ -225,7 +225,7 @@ if($session == null || $session = ''){
                                         <li class="py-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="">
-                                                    <img style="width: 30px;" src="./Dashboard_files/check.svg" alt="">
+                                                    <img style="width: 30px;" src="./../Dashboard_files/check.svg" alt="">
                                                     <span class="fw-bold">Medir si el espacio que nos recomienda Alan Rack Comer</span>
                                                 </div>
                                                 <div class="d-none d-md-block">
@@ -238,7 +238,7 @@ if($session == null || $session = ''){
                                         <li class="py-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="">
-                                                    <img style="width: 30px;" src="./Dashboard_files/check.svg" alt="">
+                                                    <img style="width: 30px;" src="./../Dashboard_files/check.svg" alt="">
                                                     <span class="fw-bold">Modificar las política de compras, sobre tiempos Estimados</span>
                                                 </div>
                                                 <div class="d-none d-md-block">
@@ -260,30 +260,30 @@ if($session == null || $session = ''){
                                             
                                             <ul class="ps-3 pt-2" style="list-style: none; line-height: 2 ;">
                                                 <li>
-                                                    <a href="https://recursos.grupoccima.com.mx/#">
+                                                    <a href="https://recursos.grupoccima.com/#">
                                                         <img src="./Dashboard_files/pdf.svg" class="doc-icon" alt="">
                                                         <span>Solicitud de Requerimientos TI</span>
                                                     </a>
                                                 </li>
-                                                <li><a href="https://recursos.grupoccima.com.mx/#">
-                                                        <img src="./Dashboard_files/pdf.svg" class="doc-icon" alt="">
+                                                <li><a href="https://recursos.grupoccima.com/#">
+                                                        <img src="./../Dashboard_files/pdf.svg" class="doc-icon" alt="">
                                                         <span>Macro Proceso</span></a></li>
-                                                <li><a href="https://recursos.grupoccima.com.mx/#">
-                                                        <img src="./Dashboard_files/pdf.svg" class="doc-icon" alt="">
+                                                <li><a href="https://recursos.grupoccima.com/#">
+                                                        <img src="./../Dashboard_files/pdf.svg" class="doc-icon" alt="">
                                                         <span>Reglamento Interno </span></a></li>
-                                                <li><a href="https://recursos.grupoccima.com.mx/#">
-                                                        <img src="./Dashboard_files/pdf.svg" class="doc-icon" alt="">
+                                                <li><a href="https://recursos.grupoccima.com/#">
+                                                        <img src="./../Dashboard_files/pdf.svg" class="doc-icon" alt="">
                                                         <span>Proceso de Facturación</span></a></li>
-                                                <li><a href="https://recursos.grupoccima.com.mx/#">
-                                                        <img src="./Dashboard_files/pdf.svg" class="doc-icon" alt="">
+                                                <li><a href="https://recursos.grupoccima.com/#">
+                                                        <img src="./../Dashboard_files/pdf.svg" class="doc-icon" alt="">
                                                         <span>Reglamento de Ventas</span></a></li>
-                                                <li><a href="https://recursos.grupoccima.com.mx/#">
-                                                        <img src="./Dashboard_files/pdf.svg" class="doc-icon" alt="">
+                                                <li><a href="https://recursos.grupoccima.com/#">
+                                                        <img src="./../Dashboard_files/pdf.svg" class="doc-icon" alt="">
                                                         <span>Manual de usuario</span></a></li>                                            
     
                                             </ul>
                                             <div class="d-flex justify-content-center mt-3 mb-1">
-                                                <a href="https://recursos.grupoccima.com.mx/"
+                                                <a href="https://recursos.grupoccima.com/"
                                                     class="btn btn-primary rounded-pill px-5"> Ver Mas</a>
                                             </div>
                                         </div>
@@ -298,7 +298,7 @@ if($session == null || $session = ''){
                                                 <a href="https://www.google.com/intl/es-419/drive/" rel="nofollow" target="_blank">
                                                     <div class="card shadow d-flex flex-column align-items-center p-2"
                                                         style="border-radius: 25px;">
-                                                        <img class="w-75 p-3" src="./Dashboard_files/logo.png" alt="">
+                                                        <img class="w-75 p-3" src="./../Dashboard_files/logo.png" alt="">
                                                         <h6 class="text-center fw-medium"> Google Drive</h6>
                                                     </div>
                                                 </a>
@@ -307,7 +307,7 @@ if($session == null || $session = ''){
                                                 <a href="https://www.office.com/" rel="nofollow" target="_blank">
                                                     <div class="card shadow d-flex flex-column align-items-center p-2"
                                                         style="border-radius: 25px;">
-                                                        <img class="w-70 p-3" src="public/img/logos/apps/microsoft_360.png"
+                                                        <img class="w-70 p-3" src="./../public/img/logos/apps/microsoft_360.png"
                                                             alt="">
                                                         <h6 class="text-center fw-medium">Office365</h6>
                                                     </div>
@@ -317,7 +317,7 @@ if($session == null || $session = ''){
                                                 <a href="https://chat.openai.com/auth/login" rel="nofollow" target="_blank">
                                                     <div class="card shadow d-flex flex-column align-items-center p-2"
                                                         style="border-radius: 25px;">
-                                                        <img class="w-75 p-3" src="public/img/logos/apps/chatgpt.png" alt="">
+                                                        <img class="w-75 p-3" src="./../public/img/logos/apps/chatgpt.png" alt="">
                                                         <h6 class="text-center fw-medium">Chat GPT</h6>
                                                     </div>
                                                 </a>
@@ -326,7 +326,7 @@ if($session == null || $session = ''){
                                                 <a href="https://trello.com/" rel="nofollow" target="_blank">
                                                     <div class="card shadow d-flex flex-column align-items-center p-2"
                                                         style="border-radius: 25px;">
-                                                        <img class="w-75 p-3" src="public/img/logos/apps/trello.png" alt="">
+                                                        <img class="w-75 p-3" src="./../public/img/logos/apps/trello.png" alt="">
                                                         <h6 class="text-center fw-medium">Trello</h6>
                                                     </div>
                                                 </a>
@@ -348,17 +348,17 @@ if($session == null || $session = ''){
                                         </div>
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                            <img src="public/img/content/img_01.jpg" class="d-block w-100" alt="...">
+                                            <img src="./../public/img/content/img_01.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="public/img/content/img_01.jpg" class="d-block w-100" alt="...">
+                                            <img src="./../public/img/content/img_01.jpg" class="d-block w-100" alt="...">
                                           </div>
                                           <div class="carousel-item">
-                                            <img src="public/img/content/img_01.jpg" class="d-block w-100" alt="...">
+                                            <img src="./../public/img/content/img_01.jpg" class="d-block w-100" alt="...">
                                           </div>
                                         </div>
                                       </div>
-                                    <img class="pt-1" src="public/img/content/calendario.jpg" alt="">
+                                    <img class="pt-1" src="./../public/img/content/calendario.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -376,7 +376,7 @@ if($session == null || $session = ''){
                                 <h4 class="fs-4 text-blue-500 fw-semibold"> Tu Opinión es Importante</h4>
                                 <p>¿En que día de la semana te Gustaria Asistir de Ropa Casual?</p>
                                 <div class="">
-                                    <form action="https://recursos.grupoccima.com.mx/" method="post">
+                                    <form action="https://recursos.grupoccima.com/" method="post">
                                         <input type="radio" id="Lunes" name="dia" value="Lunes">
                                         <label for="Lunes">Miércoles</label><br>
                                         <input type="radio" id="Martes" name="dia" value="Martes">
@@ -400,9 +400,9 @@ if($session == null || $session = ''){
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="public/js/preloader.js"></script>
-    <script src="public/js/app.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="./../public/js/preloader.js"></script>
+    <script src="./../public/js/app.js"></script>
+    <script src="./../js/bootstrap-datetimepicker.min.js"></script>
 </body>
 
 </html>

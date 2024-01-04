@@ -74,7 +74,7 @@ if($session == null || $session = ''){
                 <li><a class="dropdown-item" href="#">Perfil</a></li>
                 <li><a class="dropdown-item" href="#">Configuracion de Privacidad</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Salir</a></li>
+                <li><a class="dropdown-item" href="./../cerrar_cesion.php">Salir</a></li>
               </ul>
 
         </div>
@@ -82,16 +82,16 @@ if($session == null || $session = ''){
     <div class="l-navbar" id="nav-bar">
         <nav class="nav_main">
             <div>
-                <a href="./../dashboard_master.php" class="nav_logo">
+                <a href="./dashboard_master.php" class="nav_logo">
                     <i class='bx bx-layer nav_logo-icon'></i>
                     <span class="nav_logo-name">MyCCIMA</span>
                 </a>
                 <div class="nav_list">
-                    <a href="./../dashboard.html" class="nav_link">
+                    <a href="./dashboard.php" class="nav_link">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
-                    <a href="./../empleados.html" class="nav_link">
+                    <a href="./../empleados.php" class="nav_link">
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Empleados</span>
                     </a>
